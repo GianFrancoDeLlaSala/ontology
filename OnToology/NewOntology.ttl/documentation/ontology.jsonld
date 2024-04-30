@@ -13,9 +13,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Aircraft"
-  }, {
-    "@language" : "iri-based",
-    "@value" : "Aircraft"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline"
@@ -35,9 +32,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Airline"
-  }, {
-    "@language" : "iri-based",
-    "@value" : "Airline"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight"
@@ -56,7 +50,7 @@
     "@language" : "en",
     "@value" : "Baggage Service"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "BaggageService"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -72,7 +66,7 @@
     "@language" : "en",
     "@value" : "Business Class Ticket"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "BusinessClassTicket"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -88,7 +82,7 @@
     "@language" : "en",
     "@value" : "Check-In Service"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "CheckInService"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -102,9 +96,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Crew"
-  }, {
-    "@language" : "iri-based",
     "@value" : "Crew"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -126,7 +117,7 @@
     "@language" : "en",
     "@value" : "Economy Class Ticket"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "EconomyClassTicket"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -142,7 +133,7 @@
     "@language" : "en",
     "@value" : "Entertainment Service"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "EntertainmentService"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -158,7 +149,7 @@
     "@language" : "en",
     "@value" : "First Class Ticket"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "FirstClassTicket"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -174,7 +165,7 @@
     "@language" : "en",
     "@value" : "First Time Flyer"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "FirstTimeFlyer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -188,9 +179,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Flight"
-  }, {
-    "@language" : "iri-based",
     "@value" : "Flight"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -214,7 +202,7 @@
     "@language" : "en",
     "@value" : "Flight Attendant"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "FlightAttendant"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -227,7 +215,7 @@
     "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "Flights"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
@@ -241,9 +229,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "FrequentFlyer"
-  }, {
-    "@language" : "iri-based",
     "@value" : "FrequentFlyer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -259,7 +244,7 @@
     "@language" : "en",
     "@value" : "Ground Service"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "GroundService"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -275,7 +260,7 @@
     "@language" : "en",
     "@value" : "In-Flight Service"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "InFlightService"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -294,7 +279,7 @@
     "@language" : "en",
     "@value" : "Jet Aircraft"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "JetAircraft"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -310,7 +295,7 @@
     "@language" : "en",
     "@value" : "Meal Service"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "MealService"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -326,7 +311,7 @@
     "@language" : "en",
     "@value" : "Narrow Body Aircraft"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "NarrowBodyAircraft"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -341,9 +326,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "NegativeReview"
-  }, {
-    "@language" : "iri-based",
-    "@value" : "NegativeReview"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review"
@@ -356,9 +338,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Passenger"
-  }, {
-    "@language" : "iri-based",
     "@value" : "Passenger"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -376,9 +355,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Person"
-  }, {
-    "@language" : "iri-based",
-    "@value" : "Person"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Pilot",
@@ -388,9 +364,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Pilot"
-  }, {
-    "@language" : "iri-based",
     "@value" : "Pilot"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -404,9 +377,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "PositiveReview"
-  }, {
-    "@language" : "iri-based",
     "@value" : "PositiveReview"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -422,7 +392,7 @@
     "@language" : "en",
     "@value" : "Qatar Airways"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "QatarAirways"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -437,9 +407,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Review"
-  }, {
-    "@language" : "iri-based",
-    "@value" : "Review"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ryanair",
@@ -449,9 +416,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Ryanair"
-  }, {
-    "@language" : "iri-based",
     "@value" : "Ryanair"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -466,9 +430,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Service"
-  }, {
-    "@language" : "iri-based",
-    "@value" : "Service"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ticket",
@@ -478,9 +439,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Ticket"
-  }, {
-    "@language" : "iri-based",
     "@value" : "Ticket"
   } ]
 }, {
@@ -493,7 +451,7 @@
     "@language" : "en",
     "@value" : "TurboProp Aircraft"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "TurboPropAircraft"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -509,7 +467,7 @@
     "@language" : "en",
     "@value" : "Wide Body Aircraft"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "WideBodyAircraft"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -528,7 +486,7 @@
     "@language" : "en",
     "@value" : "DateFlown"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "dateFlown"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
@@ -547,7 +505,7 @@
     "@language" : "en",
     "@value" : "Destination"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "destination"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
@@ -566,7 +524,7 @@
     "@language" : "en",
     "@value" : "FliesWith"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "fliesWith"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
@@ -588,7 +546,7 @@
     "@language" : "en",
     "@value" : "FlownBy"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "flownBy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
@@ -610,7 +568,7 @@
     "@language" : "en",
     "@value" : "HasReview"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "hasReview"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
@@ -632,7 +590,7 @@
     "@language" : "en",
     "@value" : "Origin"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "origin"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
@@ -651,7 +609,7 @@
     "@language" : "en",
     "@value" : "Rating"
   }, {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "rating"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
@@ -672,7 +630,7 @@
   "@id" : "http://www.w3.org/2002/07/owl#topDataProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "topDataProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
@@ -682,7 +640,7 @@
   "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "iri-based",
+    "@language" : "en",
     "@value" : "topObjectProperty"
   } ]
 } ]
