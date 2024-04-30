@@ -1,0 +1,166 @@
+{
+  "@context" : {
+    "DomesticFlight" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/DomesticFlight"
+    },
+    "WideBodyAircraft" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/WideBodyAircraft"
+    },
+    "EconomyClassTicket" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/EconomyClassTicket"
+    },
+    "BaggageService" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/BaggageService"
+    },
+    "Review" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Review"
+    },
+    "origin" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/origin",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Flights" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flights",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "BusinessClassTicket" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/BusinessClassTicket"
+    },
+    "EntertainmentService" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/EntertainmentService"
+    },
+    "destination" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/destination",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FrequentFlyer" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/FrequentFlyer"
+    },
+    "fliesWith" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/fliesWith",
+      "@type" : "@id"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "class" : {
+      "@id" : "http://www.w3.org/2002/07/owl#class"
+    },
+    "InternationalFlight" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/InternationalFlight"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "FirstTimeFlyer" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/FirstTimeFlyer"
+    },
+    "hasReview" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/hasReview",
+      "@type" : "@id"
+    },
+    "CheckInService" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/CheckInService"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Person"
+    },
+    "NarrowBodyAircraft" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/NarrowBodyAircraft"
+    },
+    "InFlightService" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/InFlightService"
+    },
+    "Ticket" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Ticket"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "Pilot" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Pilot"
+    },
+    "Crew" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Crew"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "FlightAttendant" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/FlightAttendant"
+    },
+    "QatarAirways" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/QatarAirways"
+    },
+    "Passenger" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Passenger"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "MealService" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/MealService"
+    },
+    "FirstClassTicket" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/FirstClassTicket"
+    },
+    "JetAircraft" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/JetAircraft"
+    },
+    "Aircraft" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Aircraft"
+    },
+    "Ryanair" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Ryanair"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "Airline" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Airline"
+    },
+    "Flight" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flight"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "GroundService" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/GroundService"
+    },
+    "NegativeReview" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/NegativeReview"
+    },
+    "flownBy" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/flownBy",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "PositiveReview" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/PositiveReview"
+    },
+    "Service" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Service"
+    },
+    "rating" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/rating",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "TurboPropAircraft" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/TurboPropAircraft"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "dateFlown" : {
+      "@id" : "http://www.semanticweb.org/gian/ontologies/2024/3/ontology/dateFlown",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  }
+}
