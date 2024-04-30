@@ -1,0 +1,526 @@
+@prefix : <http://www.semanticweb.org/gian/ontologies/2024/3/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/gian/ontologies/2024/3/ontology#> .
+
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology> rdf:type owl:Ontology ;
+                                                              <http://purl.org/dc/elements/1.1/creator> "Gian" ;
+                                                              <http://purl.org/dc/elements/1.1/rights> "http://creativecommons.org/licenses/by/4.0/" ;
+                                                              <http://purl.org/dc/elements/1.1/title> "My first ontology" ,
+                                                                                                      "My ontology" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#Class
+owl:Class rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/fliesWith
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/fliesWith> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flight> ;
+                                                                       rdfs:range <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Aircraft> ;
+                                                                       rdfs:comment "Match a flight with the aircraft type." ;
+                                                                       rdfs:label "FliesWith" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/flownBy
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/flownBy> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                     rdfs:domain <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flight> ;
+                                                                     rdfs:range <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Airline> ;
+                                                                     rdfs:comment "Connect passengers with their flights." ;
+                                                                     rdfs:label "FlownBy" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/hasReview
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/hasReview> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flight> ;
+                                                                       rdfs:range <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Review> ;
+                                                                       rdfs:comment "Associate each flight with its reviews." ;
+                                                                       rdfs:label "HasReview" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flights
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flights> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:subPropertyOf owl:topDataProperty ;
+                                                                     rdfs:domain <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flight> ;
+                                                                     rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/dateFlown
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/dateFlown> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:subPropertyOf owl:topDataProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flight> ;
+                                                                       rdfs:range xsd:dateTime ;
+                                                                       rdfs:comment "Date the flight took place." ;
+                                                                       rdfs:label "DateFlown" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/destination
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/destination> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                                         rdfs:domain <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flight> ;
+                                                                         rdfs:range xsd:string ;
+                                                                         rdfs:comment "Destination airport." ;
+                                                                         rdfs:label "Destination" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/origin
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/origin> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:subPropertyOf owl:topDataProperty ;
+                                                                    rdfs:domain <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flight> ;
+                                                                    rdfs:range xsd:string ;
+                                                                    rdfs:comment "Origin airport." ;
+                                                                    rdfs:label "Origin" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/rating
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/rating> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:subPropertyOf owl:topDataProperty ;
+                                                                    rdfs:domain <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Review> ;
+                                                                    rdfs:range xsd:decimal ;
+                                                                    rdfs:comment "Rating given in the review." ;
+                                                                    rdfs:label "Rating" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Aircraft
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Aircraft> rdf:type owl:Class ;
+                                                                      rdfs:comment "A vehicle used for air transport." ;
+                                                                      rdfs:label "Aircraft" ;
+                                                                      rdfs:seeAlso "http://dbpedia.org/page/Boeing_737" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Airline
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Airline> rdf:type owl:Class ;
+                                                                     rdfs:comment "Represents an airline company that operates flights." ;
+                                                                     rdfs:label "Airline" ;
+                                                                     rdfs:seeAlso "http://dbpedia.org/page/Airline" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/BaggageService
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/BaggageService> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/GroundService> ;
+                                                                            rdfs:comment "Services related to the handling of passenger luggage." ;
+                                                                            rdfs:label "Baggage Service" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/BusinessClassTicket
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/BusinessClassTicket> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Ticket> ;
+                                                                                 rdfs:comment "A ticket for travel in the business class section of the aircraft." ;
+                                                                                 rdfs:label "Business Class Ticket" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/CheckInService
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/CheckInService> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/GroundService> ;
+                                                                            rdfs:comment "The service of processing passengers and their baggage at the airport before a flight." ;
+                                                                            rdfs:label "Check-In Service" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Crew
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Crew> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Person> ;
+                                                                  rdfs:comment "The staff working on an aircraft during flights." ;
+                                                                  rdfs:label "Crew" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/DomesticFlight
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/DomesticFlight> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flight> ;
+                                                                            rdfs:comment "A flight that occurs within the same country's borders." ;
+                                                                            rdfs:label "Domestic Flight" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/EconomyClassTicket
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/EconomyClassTicket> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Ticket> ;
+                                                                                rdfs:comment "A ticket for travel in the economy section of the aircraft." ;
+                                                                                rdfs:label "Economy Class Ticket" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/EntertainmentService
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/EntertainmentService> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/InFlightService> ;
+                                                                                  rdfs:comment "Services related to entertainment provided to passengers during a flight." ;
+                                                                                  rdfs:label "Entertainment Service" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/FirstClassTicket
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/FirstClassTicket> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Ticket> ;
+                                                                              rdfs:comment "A ticket for travel in the luxurious first class section of the aircraft." ;
+                                                                              rdfs:label "First Class Ticket" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/FirstTimeFlyer
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/FirstTimeFlyer> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Passenger> ;
+                                                                            rdfs:comment "A passenger who is flying for the first time." ;
+                                                                            rdfs:label "First Time Flyer" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flight
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flight> rdf:type owl:Class ;
+                                                                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/hasReview> ;
+                                                                                          owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                          owl:onClass <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Review>
+                                                                                        ] ;
+                                                                    rdfs:comment "Represents a specific flight operation from one location to another." ;
+                                                                    rdfs:label "Flight" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/FlightAttendant
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/FlightAttendant> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Crew> ;
+                                                                             rdfs:comment "A person responsible for the safety and comfort of passengers during a flight." ;
+                                                                             rdfs:label "Flight Attendant" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/FrequentFlyer
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/FrequentFlyer> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Passenger> ;
+                                                                           rdfs:comment "A passenger who travels frequently, often accumulating miles and benefits." ;
+                                                                           rdfs:label "FrequentFlyer" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/GroundService
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/GroundService> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Service> ;
+                                                                           rdfs:comment "Services provided to passengers on the ground, before or after flights." ;
+                                                                           rdfs:label "Ground Service" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/InFlightService
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/InFlightService> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Service> ;
+                                                                             rdfs:comment "Services provided to passengers during the flight." ;
+                                                                             rdfs:label "In-Flight Service" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/InternationalFlight
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/InternationalFlight> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flight> ;
+                                                                                 rdfs:comment "A flight that travels from one country to another." ;
+                                                                                 rdfs:label "International Flight" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/JetAircraft
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/JetAircraft> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Aircraft> ;
+                                                                         rdfs:comment "Aircraft powered by jet engines." ;
+                                                                         rdfs:label "Jet Aircraft" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/MealService
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/MealService> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/InFlightService> ;
+                                                                         rdfs:comment "The service of providing food to passengers during a flight." ;
+                                                                         rdfs:label "Meal Service" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/NarrowBodyAircraft
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/NarrowBodyAircraft> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Aircraft> ;
+                                                                                rdfs:comment "A smaller aircraft with a narrow fuselage, typically used for short to medium-haul flights." ;
+                                                                                rdfs:label "Narrow Body Aircraft" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/NegativeReview
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/NegativeReview> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Review> ;
+                                                                            rdfs:comment "A negative assessment or feedback given by a passenger." ;
+                                                                            rdfs:label "NegativeReview" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Passenger
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Passenger> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Person> ;
+                                                                       rdfs:comment "A person who travels in an aircraft." ;
+                                                                       rdfs:label "Passenger" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Person
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Person> rdf:type owl:Class ;
+                                                                    rdfs:comment "Represents an individual person, either a passenger or a member of the crew." ;
+                                                                    rdfs:label "Person" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Pilot
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Pilot> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Crew> ;
+                                                                   rdfs:comment "A person who operates the flying controls of an aircraft." ;
+                                                                   rdfs:label "Pilot" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/PositiveReview
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/PositiveReview> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Review> ;
+                                                                            rdfs:comment "A positive assessment or feedback given by a passenger." ;
+                                                                            rdfs:label "PositiveReview" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/QatarAirways
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/QatarAirways> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Airline> ;
+                                                                          rdfs:comment "Represents the airline company Qatar Airways." ;
+                                                                          rdfs:label "Qatar Airways" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Review
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Review> rdf:type owl:Class ;
+                                                                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/rating> ;
+                                                                                          owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                          owl:onDataRange xsd:decimal
+                                                                                        ] ;
+                                                                    rdfs:comment "Represents a review or feedback provided by a passenger about a flight experience." ;
+                                                                    rdfs:label "Review" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Ryanair
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Ryanair> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Airline> ;
+                                                                     rdfs:comment "Represents the airline company Ryanair." ;
+                                                                     rdfs:label "Ryanair" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Service
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Service> rdf:type owl:Class ;
+                                                                     rdfs:comment "Represents services provided to passengers, either in-flight or on the ground." ;
+                                                                     rdfs:label "Service" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Ticket
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Ticket> rdf:type owl:Class ;
+                                                                    rdfs:comment "Represents a flight ticket purchased by a passenger." ;
+                                                                    rdfs:label "Ticket" ;
+                                                                    rdfs:seeAlso "http://dbpedia.org/page/Airline_ticket" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/TurboPropAircraft
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/TurboPropAircraft> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Aircraft> ;
+                                                                               rdfs:comment "Aircraft powered by turbine propeller engines." ;
+                                                                               rdfs:label "TurboProp Aircraft" .
+
+
+###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology/WideBodyAircraft
+<http://www.semanticweb.org/gian/ontologies/2024/3/ontology/WideBodyAircraft> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Aircraft> ;
+                                                                              rdfs:comment "A large aircraft with a wide fuselage, typically used for long-haul flights" ;
+                                                                              rdfs:label "Wide Body Aircraft" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Aircraft>
+                <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Airline>
+                <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flight>
+                <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Passenger>
+                <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Review>
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/count> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/f> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/rate> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Review> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/rating> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/r> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/rate>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/rate> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 5 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flight> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/f>
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/hasReview> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/f> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/r>
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/PositiveReview> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/f>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                       <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                    rdf:first <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/rate> ;
+                                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                                               rdf:first 5 ;
+                                                                                                               rdf:rest rdf:nil
+                                                                                                             ]
+                                                                                                  ]
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Review> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/rating> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/r> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/rate>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flight> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/f>
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/hasReview> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/f> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/r>
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/NegativeReview> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/f>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Passenger> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                  <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                               rdf:first <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/count> ;
+                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                          rdf:first 10 ;
+                                                                                                                          rdf:rest rdf:nil
+                                                                                                                        ]
+                                                                                                             ]
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/Flights> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/p> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/f>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/gian/ontologies/2024/3/ontology/FrequentFlyer> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2/p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
