@@ -1,0 +1,688 @@
+[ {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A vehicle used for air transport."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aircraft"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "Aircraft"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline"
+  }, {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight"
+  }, {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger"
+  }, {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents an airline company that operates flights."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Airline"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "Airline"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight"
+  }, {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger"
+  }, {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BaggageService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Services related to the handling of passenger luggage."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Baggage Service"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "BaggageService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#GroundService"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BusinessClassTicket",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A ticket for travel in the business class section of the aircraft."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Business Class Ticket"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "BusinessClassTicket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ticket"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#CheckInService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The service of processing passengers and their baggage at the airport before a flight."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Check-In Service"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "CheckInService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#GroundService"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Crew",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The staff working on an aircraft during flights."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Crew"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "Crew"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#DomesticFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#EconomyClassTicket",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A ticket for travel in the economy section of the aircraft."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Economy Class Ticket"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "EconomyClassTicket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ticket"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#EntertainmentService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Services related to entertainment provided to passengers during a flight."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Entertainment Service"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "EntertainmentService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InFlightService"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstClassTicket",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A ticket for travel in the luxurious first class section of the aircraft."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "First Class Ticket"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "FirstClassTicket"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ticket"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstTimeFlyer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A passenger who is flying for the first time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "First Time Flyer"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "FirstTimeFlyer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents a specific flight operation from one location to another."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Flight"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger"
+  }, {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InternationalFlight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FlightAttendant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person responsible for the safety and comfort of passengers during a flight."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Flight Attendant"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "FlightAttendant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Crew"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "iri-based",
+    "@value" : "Flights"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FrequentFlyer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A passenger who travels frequently, often accumulating miles and benefits."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "FrequentFlyer"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "FrequentFlyer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#GroundService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Services provided to passengers on the ground, before or after flights."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ground Service"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "GroundService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InFlightService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Services provided to passengers during the flight."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "In-Flight Service"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "InFlightService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InternationalFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#JetAircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Aircraft powered by jet engines."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jet Aircraft"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "JetAircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#MealService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The service of providing food to passengers during a flight."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Meal Service"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "MealService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InFlightService"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NarrowBodyAircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A smaller aircraft with a narrow fuselage, typically used for short to medium-haul flights."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Narrow Body Aircraft"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "NarrowBodyAircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NegativeReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A negative assessment or feedback given by a passenger."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "NegativeReview"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "NegativeReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person who travels in an aircraft."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Passenger"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "Passenger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents an individual person, either a passenger or a member of the crew."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Person"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Pilot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A person who operates the flying controls of an aircraft."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pilot"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "Pilot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Crew"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#PositiveReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A positive assessment or feedback given by a passenger."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PositiveReview"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "PositiveReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#QatarAirways",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the airline company Qatar Airways."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Qatar Airways"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "QatarAirways"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents a review or feedback provided by a passenger about a flight experience."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Review"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ryanair",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the airline company Ryanair."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ryanair"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "Ryanair"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents services provided to passengers, either in-flight or on the ground."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Service"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ticket",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents a flight ticket purchased by a passenger."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ticket"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "Ticket"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#TurboPropAircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Aircraft powered by turbine propeller engines."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "TurboProp Aircraft"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "TurboPropAircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#WideBodyAircraft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A large aircraft with a wide fuselage, typically used for long-haul flights"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Wide Body Aircraft"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "WideBodyAircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#dateFlown",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Date the flight took place."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DateFlown"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "dateFlown"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#destination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Destination airport."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Destination"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "destination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#fliesWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Match a flight with the aircraft type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "FliesWith"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "fliesWith"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#flownBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Connect passengers with their flights."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "FlownBy"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "flownBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#hasReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Associate each flight with its reviews."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "HasReview"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "hasReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#origin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Origin airport."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Origin"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "origin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Rating given in the review."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Rating"
+  }, {
+    "@language" : "iri-based",
+    "@value" : "rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "undefined"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "undefined"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topDataProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "iri-based",
+    "@value" : "topDataProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "iri-based",
+    "@value" : "topObjectProperty"
+  } ]
+} ]
