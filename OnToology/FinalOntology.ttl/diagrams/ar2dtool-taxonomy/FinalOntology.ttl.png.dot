@@ -1,0 +1,31 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Person" "base:FrequentFlyer" "base:EntertainmentService" "base:PositiveReview" "base:NegativeReview" "base:MealService" "base:JetAircraft" "base:NarrowBodyAircraft" "base:Ticket" "base:Crew" "base:FlightAttendant" "base:Pilot" "base:BaggageService" "base:CheckInService" "base:Aircraft" "base:TurboPropAircraft" "base:Airline" "base:FirstClassTicket" "base:QatarAirways" "base:Passenger" "base:DomesticFlight" "base:Review" "base:GroundService" "base:Flight" "base:InternationalFlight" "base:BusinessClassTicket" "base:InFlightService" "base:FirstTimeFlyer" "base:WideBodyAircraft" "base:Service" "base:EconomyClassTicket" "base:Ryanair" ; /*classes style*/
+	"base:FirstClassTicket" -> "base:Ticket" [ label = "rdfs:subClassOf" ];
+	"base:FrequentFlyer" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+	"base:Crew" -> "base:Person" [ label = "rdfs:subClassOf" ];
+	"base:BusinessClassTicket" -> "base:Ticket" [ label = "rdfs:subClassOf" ];
+	"base:EconomyClassTicket" -> "base:Ticket" [ label = "rdfs:subClassOf" ];
+	"base:FirstTimeFlyer" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+	"base:DomesticFlight" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:MealService" -> "base:InFlightService" [ label = "rdfs:subClassOf" ];
+	"base:GroundService" -> "base:Service" [ label = "rdfs:subClassOf" ];
+	"base:EntertainmentService" -> "base:InFlightService" [ label = "rdfs:subClassOf" ];
+	"base:NegativeReview" -> "base:Review" [ label = "rdfs:subClassOf" ];
+	"base:InternationalFlight" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:WideBodyAircraft" -> "base:Aircraft" [ label = "rdfs:subClassOf" ];
+	"base:InFlightService" -> "base:Service" [ label = "rdfs:subClassOf" ];
+	"base:JetAircraft" -> "base:Aircraft" [ label = "rdfs:subClassOf" ];
+	"base:QatarAirways" -> "base:Airline" [ label = "rdfs:subClassOf" ];
+	"base:NarrowBodyAircraft" -> "base:Aircraft" [ label = "rdfs:subClassOf" ];
+	"base:CheckInService" -> "base:GroundService" [ label = "rdfs:subClassOf" ];
+	"base:Pilot" -> "base:Crew" [ label = "rdfs:subClassOf" ];
+	"base:Passenger" -> "base:Person" [ label = "rdfs:subClassOf" ];
+	"base:TurboPropAircraft" -> "base:Aircraft" [ label = "rdfs:subClassOf" ];
+	"base:Ryanair" -> "base:Airline" [ label = "rdfs:subClassOf" ];
+	"base:FlightAttendant" -> "base:Crew" [ label = "rdfs:subClassOf" ];
+	"base:PositiveReview" -> "base:Review" [ label = "rdfs:subClassOf" ];
+	"base:BaggageService" -> "base:GroundService" [ label = "rdfs:subClassOf" ];
+
+}
