@@ -1,0 +1,277 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-5> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
+@prefix swrl: 		<http://www.w3.org/2003/11/swrl#> .
+@prefix swrla: 		<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: 		<http://www.w3.org/2003/11/swrlb#> .
+@prefix : 		<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-5#> .
+@base 			<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-5> .
+
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-5> rdf:type owl:Ontology ;
+                                                                          dc:title "undefined"@en;
+                                                                          dc:description "undefined"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 10 ###
+#  --------------------------- Property 0------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#origin> rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
+                                                                                 rdfs:comment "Origin airport." ;
+                                                                                 rdfs:label "origin"@IRI-based; 
+                                                                                 rdfs:label "Origin"@en; 
+                                                                                 rdfs:domain <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight>;
+                                                                                 rdfs:range xsd:string . 
+#  --------------------------- Property 1------------------------- 
+owl:topObjectProperty rdf:type owl:ObjectProperty, owl:SymmetricProperty, owl:TransitiveProperty ;
+                      rdfs:label "topObjectProperty"@IRI-based . 
+#  --------------------------- Property 2------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#dateFlown> rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
+                                                                                    rdfs:comment "Date the flight took place." ;
+                                                                                    rdfs:label "dateFlown"@IRI-based; 
+                                                                                    rdfs:label "DateFlown"@en; 
+                                                                                    rdfs:domain <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight>;
+                                                                                    rdfs:range xsd:dateTime . 
+#  --------------------------- Property 3------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#fliesWith> rdf:type owl:ObjectProperty, owl:SymmetricProperty ;
+                                                                                    rdfs:comment "Match a flight with the aircraft type." ;
+                                                                                   rdfs:subPropertyOf owl:topObjectProperty;
+                                                                                    rdfs:label "fliesWith"@IRI-based; 
+                                                                                    rdfs:label "FliesWith"@en; 
+                                                                                    rdfs:domain <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight>;
+                                                                                    rdfs:range <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> . 
+#  --------------------------- Property 4------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#rating> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:comment "Rating given in the review." ;
+                                                                                 rdfs:label "rating"@IRI-based; 
+                                                                                 rdfs:label "Rating"@en; 
+                                                                                 rdfs:domain <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review>;
+                                                                                 rdfs:range xsd:decimal . 
+#  --------------------------- Property 5------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flights> rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
+                                                                                  rdfs:label "Flights"@IRI-based; 
+                                                                                  rdfs:domain <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight>;
+                                                                                  rdfs:range xsd:decimal . 
+#  --------------------------- Property 6------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#flownBy> rdf:type owl:ObjectProperty, owl:SymmetricProperty ;
+                                                                                  rdfs:comment "Connect passengers with their flights." ;
+                                                                                 rdfs:subPropertyOf owl:topObjectProperty;
+                                                                                  rdfs:label "flownBy"@IRI-based; 
+                                                                                  rdfs:label "FlownBy"@en; 
+                                                                                  rdfs:domain <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight>;
+                                                                                  rdfs:range <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline> . 
+#  --------------------------- Property 7------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#hasReview> rdf:type owl:ObjectProperty, owl:SymmetricProperty ;
+                                                                                    rdfs:comment "Associate each flight with its reviews." ;
+                                                                                   rdfs:subPropertyOf owl:topObjectProperty;
+                                                                                    rdfs:label "hasReview"@IRI-based; 
+                                                                                    rdfs:label "HasReview"@en; 
+                                                                                    rdfs:domain <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight>;
+                                                                                    rdfs:range <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review> . 
+#  --------------------------- Property 8------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#destination> rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
+                                                                                      rdfs:comment "Destination airport." ;
+                                                                                      rdfs:label "destination"@IRI-based; 
+                                                                                      rdfs:label "Destination"@en; 
+                                                                                      rdfs:domain <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight>;
+                                                                                      rdfs:range xsd:string . 
+#  --------------------------- Property 9------------------------- 
+owl:topDataProperty rdf:type owl:DatatypeProperty ;
+                    rdfs:label "topDataProperty"@IRI-based; 
+                    rdfs:range rdfs:Literal . 
+###  Class Definitions (Number of Classes) 30 ###
+#  --------------------------- Class  0------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#WideBodyAircraft> rdf:type owl:Class; 
+                                                                                           rdfs:comment "A large aircraft with a wide fuselage, typically used for long-haul flights" ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> ;
+                                                                                           rdfs:label "WideBodyAircraft"@IRI-based; 
+                                                                                           rdfs:label "Wide Body Aircraft"@en . 
+#  --------------------------- Class  1------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ryanair> rdf:type owl:Class; 
+                                                                                  rdfs:comment "Represents the airline company Ryanair." ;
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline> ;
+                                                                                  rdfs:label "Ryanair"@IRI-based; 
+                                                                                  rdfs:label "Ryanair"@en . 
+#  --------------------------- Class  2------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#MealService> rdf:type owl:Class; 
+                                                                                      rdfs:comment "The service of providing food to passengers during a flight." ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InFlightService> ;
+                                                                                      rdfs:label "MealService"@IRI-based; 
+                                                                                      rdfs:label "Meal Service"@en . 
+#  --------------------------- Class  3------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Person> rdf:type owl:Class; 
+                                                                                 rdfs:comment "Represents an individual person, either a passenger or a member of the crew." ;
+                                                                                 rdfs:label "Person"@IRI-based; 
+                                                                                 rdfs:label "Person"@en . 
+#  --------------------------- Class  4------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FlightAttendant> rdf:type owl:Class; 
+                                                                                          rdfs:comment "A person responsible for the safety and comfort of passengers during a flight." ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Crew> ;
+                                                                                          rdfs:label "FlightAttendant"@IRI-based; 
+                                                                                          rdfs:label "Flight Attendant"@en . 
+#  --------------------------- Class  5------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger> rdf:type owl:Class; 
+                                                                                    rdfs:comment "A person who travels in an aircraft." ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Person> ;
+                                                                                    owl:disjointWith <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> ;
+                                                                                    owl:disjointWith <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline> ;
+                                                                                    owl:disjointWith <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight> ;
+                                                                                    rdfs:label "Passenger"@IRI-based; 
+                                                                                    rdfs:label "Passenger"@en . 
+#  --------------------------- Class  6------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstClassTicket> rdf:type owl:Class; 
+                                                                                           rdfs:comment "A ticket for travel in the luxurious first class section of the aircraft." ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ticket> ;
+                                                                                           rdfs:label "FirstClassTicket"@IRI-based; 
+                                                                                           rdfs:label "First Class Ticket"@en . 
+#  --------------------------- Class  7------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InFlightService> rdf:type owl:Class; 
+                                                                                          rdfs:comment "Services provided to passengers during the flight." ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Service> ;
+                                                                                          rdfs:label "InFlightService"@IRI-based; 
+                                                                                          rdfs:label "In-Flight Service"@en . 
+#  --------------------------- Class  8------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#JetAircraft> rdf:type owl:Class; 
+                                                                                      rdfs:comment "Aircraft powered by jet engines." ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> ;
+                                                                                      rdfs:label "JetAircraft"@IRI-based; 
+                                                                                      rdfs:label "Jet Aircraft"@en . 
+#  --------------------------- Class  9------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Service> rdf:type owl:Class; 
+                                                                                  rdfs:comment "Represents services provided to passengers, either in-flight or on the ground." ;
+                                                                                  rdfs:label "Service"@IRI-based; 
+                                                                                  rdfs:label "Service"@en . 
+#  --------------------------- Class  10------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review> rdf:type owl:Class; 
+                                                                                 rdfs:comment "Represents a review or feedback provided by a passenger about a flight experience." ;
+                                                                                 owl:disjointWith <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> ;
+                                                                                 owl:disjointWith <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline> ;
+                                                                                 owl:disjointWith <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight> ;
+                                                                                 owl:disjointWith <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger> ;
+                                                                                 rdfs:label "Review"@IRI-based; 
+                                                                                 rdfs:label "Review"@en . 
+#  --------------------------- Class  11------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#GroundService> rdf:type owl:Class; 
+                                                                                        rdfs:comment "Services provided to passengers on the ground, before or after flights." ;
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Service> ;
+                                                                                        rdfs:label "GroundService"@IRI-based; 
+                                                                                        rdfs:label "Ground Service"@en . 
+#  --------------------------- Class  12------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NegativeReview> rdf:type owl:Class; 
+                                                                                         rdfs:comment "A negative assessment or feedback given by a passenger." ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review> ;
+                                                                                         rdfs:label "NegativeReview"@IRI-based; 
+                                                                                         rdfs:label "NegativeReview"@en . 
+#  --------------------------- Class  13------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstTimeFlyer> rdf:type owl:Class; 
+                                                                                         rdfs:comment "A passenger who is flying for the first time." ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger> ;
+                                                                                         rdfs:label "FirstTimeFlyer"@IRI-based; 
+                                                                                         rdfs:label "First Time Flyer"@en . 
+#  --------------------------- Class  14------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Crew> rdf:type owl:Class; 
+                                                                               rdfs:comment "The staff working on an aircraft during flights." ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Person> ;
+                                                                               rdfs:label "Crew"@IRI-based; 
+                                                                               rdfs:label "Crew"@en . 
+#  --------------------------- Class  15------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#EntertainmentService> rdf:type owl:Class; 
+                                                                                               rdfs:comment "Services related to entertainment provided to passengers during a flight." ;
+                                                                                               rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InFlightService> ;
+                                                                                               rdfs:label "EntertainmentService"@IRI-based; 
+                                                                                               rdfs:label "Entertainment Service"@en . 
+#  --------------------------- Class  16------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BaggageService> rdf:type owl:Class; 
+                                                                                         rdfs:comment "Services related to the handling of passenger luggage." ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#GroundService> ;
+                                                                                         rdfs:label "BaggageService"@IRI-based; 
+                                                                                         rdfs:label "Baggage Service"@en . 
+#  --------------------------- Class  17------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight> rdf:type owl:Class; 
+                                                                                 owl:equivalentClass <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InternationalFlight> ;
+                                                                                 owl:equivalentClass <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#DomesticFlight> ;
+                                                                                 rdfs:comment "Represents a specific flight operation from one location to another." ;
+                                                                                 owl:disjointWith <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline> ;
+                                                                                 owl:disjointWith <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight> ;
+                                                                                 rdfs:label "Flight"@IRI-based; 
+                                                                                 rdfs:label "Flight"@en . 
+#  --------------------------- Class  18------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#TurboPropAircraft> rdf:type owl:Class; 
+                                                                                            rdfs:comment "Aircraft powered by turbine propeller engines." ;
+                                                                                            rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> ;
+                                                                                            rdfs:label "TurboPropAircraft"@IRI-based; 
+                                                                                            rdfs:label "TurboProp Aircraft"@en . 
+#  --------------------------- Class  19------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Pilot> rdf:type owl:Class; 
+                                                                                rdfs:comment "A person who operates the flying controls of an aircraft." ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Crew> ;
+                                                                                rdfs:label "Pilot"@IRI-based; 
+                                                                                rdfs:label "Pilot"@en . 
+#  --------------------------- Class  20------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FrequentFlyer> rdf:type owl:Class; 
+                                                                                        rdfs:comment "A passenger who travels frequently, often accumulating miles and benefits." ;
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger> ;
+                                                                                        rdfs:label "FrequentFlyer"@IRI-based; 
+                                                                                        rdfs:label "FrequentFlyer"@en . 
+#  --------------------------- Class  21------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#QatarAirways> rdf:type owl:Class; 
+                                                                                       rdfs:comment "Represents the airline company Qatar Airways." ;
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline> ;
+                                                                                       rdfs:label "QatarAirways"@IRI-based; 
+                                                                                       rdfs:label "Qatar Airways"@en . 
+#  --------------------------- Class  22------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#PositiveReview> rdf:type owl:Class; 
+                                                                                         rdfs:comment "A positive assessment or feedback given by a passenger." ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review> ;
+                                                                                         rdfs:label "PositiveReview"@IRI-based; 
+                                                                                         rdfs:label "PositiveReview"@en . 
+#  --------------------------- Class  23------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ticket> rdf:type owl:Class; 
+                                                                                 rdfs:comment "Represents a flight ticket purchased by a passenger." ;
+                                                                                 rdfs:label "Ticket"@IRI-based; 
+                                                                                 rdfs:label "Ticket"@en . 
+#  --------------------------- Class  24------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#CheckInService> rdf:type owl:Class; 
+                                                                                         rdfs:comment "The service of processing passengers and their baggage at the airport before a flight." ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#GroundService> ;
+                                                                                         rdfs:label "CheckInService"@IRI-based; 
+                                                                                         rdfs:label "Check-In Service"@en . 
+#  --------------------------- Class  25------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline> rdf:type owl:Class; 
+                                                                                  rdfs:comment "Represents an airline company that operates flights." ;
+                                                                                  owl:disjointWith <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> ;
+                                                                                  rdfs:label "Airline"@IRI-based; 
+                                                                                  rdfs:label "Airline"@en . 
+#  --------------------------- Class  26------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#EconomyClassTicket> rdf:type owl:Class; 
+                                                                                             rdfs:comment "A ticket for travel in the economy section of the aircraft." ;
+                                                                                             rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ticket> ;
+                                                                                             rdfs:label "EconomyClassTicket"@IRI-based; 
+                                                                                             rdfs:label "Economy Class Ticket"@en . 
+#  --------------------------- Class  27------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> rdf:type owl:Class; 
+                                                                                   rdfs:comment "A vehicle used for air transport." ;
+                                                                                   rdfs:label "Aircraft"@IRI-based; 
+                                                                                   rdfs:label "Aircraft"@en . 
+#  --------------------------- Class  28------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BusinessClassTicket> rdf:type owl:Class; 
+                                                                                              rdfs:comment "A ticket for travel in the business class section of the aircraft." ;
+                                                                                              rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ticket> ;
+                                                                                              rdfs:label "BusinessClassTicket"@IRI-based; 
+                                                                                              rdfs:label "Business Class Ticket"@en . 
+#  --------------------------- Class  29------------------------- 
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NarrowBodyAircraft> rdf:type owl:Class; 
+                                                                                             rdfs:comment "A smaller aircraft with a narrow fuselage, typically used for short to medium-haul flights." ;
+                                                                                             rdfs:subClassOf <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> ;
+                                                                                             rdfs:label "NarrowBodyAircraft"@IRI-based; 
+                                                                                             rdfs:label "Narrow Body Aircraft"@en . 
