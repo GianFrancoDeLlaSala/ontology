@@ -1,0 +1,152 @@
+{
+  "@context" : {
+    "DomesticFlight" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#DomesticFlight"
+    },
+    "WideBodyAircraft" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#WideBodyAircraft"
+    },
+    "EconomyClassTicket" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#EconomyClassTicket"
+    },
+    "BaggageService" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BaggageService"
+    },
+    "Review" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review"
+    },
+    "origin" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#origin",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Flights" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flights",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "BusinessClassTicket" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BusinessClassTicket"
+    },
+    "EntertainmentService" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#EntertainmentService"
+    },
+    "destination" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#destination",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FrequentFlyer" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FrequentFlyer"
+    },
+    "fliesWith" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#fliesWith",
+      "@type" : "@id"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "InternationalFlight" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InternationalFlight"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "FirstTimeFlyer" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstTimeFlyer"
+    },
+    "hasReview" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#hasReview",
+      "@type" : "@id"
+    },
+    "CheckInService" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#CheckInService"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Person"
+    },
+    "NarrowBodyAircraft" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NarrowBodyAircraft"
+    },
+    "InFlightService" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InFlightService"
+    },
+    "Ticket" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ticket"
+    },
+    "Pilot" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Pilot"
+    },
+    "Crew" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Crew"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "FlightAttendant" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FlightAttendant"
+    },
+    "QatarAirways" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#QatarAirways"
+    },
+    "Passenger" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger"
+    },
+    "MealService" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#MealService"
+    },
+    "FirstClassTicket" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstClassTicket"
+    },
+    "JetAircraft" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#JetAircraft"
+    },
+    "Aircraft" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft"
+    },
+    "Ryanair" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ryanair"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "Airline" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline"
+    },
+    "Flight" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight"
+    },
+    "GroundService" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#GroundService"
+    },
+    "NegativeReview" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NegativeReview"
+    },
+    "flownBy" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#flownBy",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "PositiveReview" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#PositiveReview"
+    },
+    "Service" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Service"
+    },
+    "rating" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#rating",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "TurboPropAircraft" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#TurboPropAircraft"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "dateFlown" : {
+      "@id" : "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#dateFlown",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  }
+}

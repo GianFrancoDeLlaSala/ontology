@@ -1,0 +1,30 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft" "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight" "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review" "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline" "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger" ; /*classes style*/
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#flownBy" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review" -> "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger" [ label = "owl:disjointWith" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review" -> "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight" [ label = "owl:disjointWith" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review" -> "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline" [ label = "owl:disjointWith" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review" -> "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft" [ label = "owl:disjointWith" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger" -> "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight" [ label = "owl:disjointWith" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger" -> "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline" [ label = "owl:disjointWith" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger" -> "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft" [ label = "owl:disjointWith" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#fliesWith" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#hasReview" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline" -> "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft" [ label = "owl:disjointWith" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight" -> "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft" [ label = "owl:disjointWith" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight" -> "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline" [ label = "owl:disjointWith" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight" -> "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#DomesticFlight" [ label = "owl:equivalentClass" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight" -> "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InternationalFlight" [ label = "owl:equivalentClass" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight" -> "xsd:string" [ label = "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#destination" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review" -> "xsd:decimal" [ label = "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#rating" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight" -> "xsd:dateTime" [ label = "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#dateFlown" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight" -> "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline" [ label = "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#flownBy" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight" -> "xsd:string" [ label = "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#origin" ];
+	"owl:Thing" -> "rdfs:Literal" [ label = "owl:topDataProperty" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight" -> "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review" [ label = "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#hasReview" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight" -> "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft" [ label = "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#fliesWith" ];
+	"http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight" -> "xsd:decimal" [ label = "http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flights" ];
+
+}
