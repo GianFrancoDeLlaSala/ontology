@@ -33,7 +33,7 @@
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#fliesWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#fliesWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Match a flight with the aircraft type." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#fliesWith> <http://www.w3.org/2000/01/rdf-schema#label> "FliesWith"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#fliesWith> <http://www.w3.org/2000/01/rdf-schema#label> "fliesWith"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#fliesWith> <http://www.w3.org/2000/01/rdf-schema#label> "fliesWith"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#flownBy
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#flownBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -43,7 +43,7 @@
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#flownBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#flownBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Connect passengers with their flights." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#flownBy> <http://www.w3.org/2000/01/rdf-schema#label> "FlownBy"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#flownBy> <http://www.w3.org/2000/01/rdf-schema#label> "flownBy"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#flownBy> <http://www.w3.org/2000/01/rdf-schema#label> "flownBy"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#hasReview
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#hasReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -53,13 +53,13 @@
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#hasReview> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#hasReview> <http://www.w3.org/2000/01/rdf-schema#comment> "Associate each flight with its reviews." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#hasReview> <http://www.w3.org/2000/01/rdf-schema#label> "HasReview"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#hasReview> <http://www.w3.org/2000/01/rdf-schema#label> "hasReview"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#hasReview> <http://www.w3.org/2000/01/rdf-schema#label> "hasReview"@en .
 # 
 # http://www.w3.org/2002/07/owl#topObjectProperty
 <http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
 <http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
-<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "topObjectProperty"@iri-based .
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/2000/01/rdf-schema#label> "topObjectProperty"@en .
 # 
 # 
 # 
@@ -75,7 +75,7 @@
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flights> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flights> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flights> <http://www.w3.org/2000/01/rdf-schema#label> "Flights"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flights> <http://www.w3.org/2000/01/rdf-schema#label> "Flights"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#dateFlown
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#dateFlown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -84,7 +84,7 @@
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#dateFlown> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#dateFlown> <http://www.w3.org/2000/01/rdf-schema#comment> "Date the flight took place." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#dateFlown> <http://www.w3.org/2000/01/rdf-schema#label> "DateFlown"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#dateFlown> <http://www.w3.org/2000/01/rdf-schema#label> "dateFlown"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#dateFlown> <http://www.w3.org/2000/01/rdf-schema#label> "dateFlown"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#destination
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#destination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -93,7 +93,7 @@
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#destination> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#destination> <http://www.w3.org/2000/01/rdf-schema#comment> "Destination airport." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#destination> <http://www.w3.org/2000/01/rdf-schema#label> "Destination"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#destination> <http://www.w3.org/2000/01/rdf-schema#label> "destination"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#destination> <http://www.w3.org/2000/01/rdf-schema#label> "destination"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#origin
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -102,7 +102,7 @@
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#origin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#origin> <http://www.w3.org/2000/01/rdf-schema#comment> "Origin airport." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#origin> <http://www.w3.org/2000/01/rdf-schema#label> "Origin"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#origin> <http://www.w3.org/2000/01/rdf-schema#label> "origin"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#origin> <http://www.w3.org/2000/01/rdf-schema#label> "origin"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#rating
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -110,12 +110,12 @@
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#rating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating given in the review." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#rating> <http://www.w3.org/2000/01/rdf-schema#label> "Rating"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#rating> <http://www.w3.org/2000/01/rdf-schema#label> "rating"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#rating> <http://www.w3.org/2000/01/rdf-schema#label> "rating"@en .
 # 
 # http://www.w3.org/2002/07/owl#topDataProperty
 <http://www.w3.org/2002/07/owl#topDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.w3.org/2002/07/owl#topDataProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://www.w3.org/2002/07/owl#topDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "topDataProperty"@iri-based .
+<http://www.w3.org/2002/07/owl#topDataProperty> <http://www.w3.org/2000/01/rdf-schema#label> "topDataProperty"@en .
 # 
 # 
 # 
@@ -134,7 +134,6 @@
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "A vehicle used for air transport." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft"@iri-based .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -143,35 +142,33 @@
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an airline company that operates flights." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline> <http://www.w3.org/2000/01/rdf-schema#label> "Airline"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline> <http://www.w3.org/2000/01/rdf-schema#label> "Airline"@iri-based .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BaggageService
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BaggageService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BaggageService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#GroundService> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BaggageService> <http://www.w3.org/2000/01/rdf-schema#comment> "Services related to the handling of passenger luggage." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BaggageService> <http://www.w3.org/2000/01/rdf-schema#label> "Baggage Service"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BaggageService> <http://www.w3.org/2000/01/rdf-schema#label> "BaggageService"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BaggageService> <http://www.w3.org/2000/01/rdf-schema#label> "BaggageService"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BusinessClassTicket
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BusinessClassTicket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BusinessClassTicket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ticket> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BusinessClassTicket> <http://www.w3.org/2000/01/rdf-schema#comment> "A ticket for travel in the business class section of the aircraft." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BusinessClassTicket> <http://www.w3.org/2000/01/rdf-schema#label> "Business Class Ticket"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BusinessClassTicket> <http://www.w3.org/2000/01/rdf-schema#label> "BusinessClassTicket"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#BusinessClassTicket> <http://www.w3.org/2000/01/rdf-schema#label> "BusinessClassTicket"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#CheckInService
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#CheckInService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#CheckInService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#GroundService> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#CheckInService> <http://www.w3.org/2000/01/rdf-schema#comment> "The service of processing passengers and their baggage at the airport before a flight." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#CheckInService> <http://www.w3.org/2000/01/rdf-schema#label> "Check-In Service"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#CheckInService> <http://www.w3.org/2000/01/rdf-schema#label> "CheckInService"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#CheckInService> <http://www.w3.org/2000/01/rdf-schema#label> "CheckInService"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Crew
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Crew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Person> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Crew> <http://www.w3.org/2000/01/rdf-schema#comment> "The staff working on an aircraft during flights." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Crew> <http://www.w3.org/2000/01/rdf-schema#label> "Crew"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Crew> <http://www.w3.org/2000/01/rdf-schema#label> "Crew"@iri-based .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#DomesticFlight
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#DomesticFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -182,28 +179,28 @@
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#EconomyClassTicket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ticket> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#EconomyClassTicket> <http://www.w3.org/2000/01/rdf-schema#comment> "A ticket for travel in the economy section of the aircraft." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#EconomyClassTicket> <http://www.w3.org/2000/01/rdf-schema#label> "Economy Class Ticket"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#EconomyClassTicket> <http://www.w3.org/2000/01/rdf-schema#label> "EconomyClassTicket"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#EconomyClassTicket> <http://www.w3.org/2000/01/rdf-schema#label> "EconomyClassTicket"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#EntertainmentService
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#EntertainmentService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#EntertainmentService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InFlightService> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#EntertainmentService> <http://www.w3.org/2000/01/rdf-schema#comment> "Services related to entertainment provided to passengers during a flight." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#EntertainmentService> <http://www.w3.org/2000/01/rdf-schema#label> "Entertainment Service"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#EntertainmentService> <http://www.w3.org/2000/01/rdf-schema#label> "EntertainmentService"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#EntertainmentService> <http://www.w3.org/2000/01/rdf-schema#label> "EntertainmentService"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstClassTicket
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstClassTicket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstClassTicket> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ticket> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstClassTicket> <http://www.w3.org/2000/01/rdf-schema#comment> "A ticket for travel in the luxurious first class section of the aircraft." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstClassTicket> <http://www.w3.org/2000/01/rdf-schema#label> "First Class Ticket"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstClassTicket> <http://www.w3.org/2000/01/rdf-schema#label> "FirstClassTicket"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstClassTicket> <http://www.w3.org/2000/01/rdf-schema#label> "FirstClassTicket"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstTimeFlyer
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstTimeFlyer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstTimeFlyer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstTimeFlyer> <http://www.w3.org/2000/01/rdf-schema#comment> "A passenger who is flying for the first time." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstTimeFlyer> <http://www.w3.org/2000/01/rdf-schema#label> "First Time Flyer"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstTimeFlyer> <http://www.w3.org/2000/01/rdf-schema#label> "FirstTimeFlyer"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FirstTimeFlyer> <http://www.w3.org/2000/01/rdf-schema#label> "FirstTimeFlyer"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -214,35 +211,33 @@
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a specific flight operation from one location to another." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight> <http://www.w3.org/2000/01/rdf-schema#label> "Flight"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Flight> <http://www.w3.org/2000/01/rdf-schema#label> "Flight"@iri-based .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FlightAttendant
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FlightAttendant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FlightAttendant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Crew> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FlightAttendant> <http://www.w3.org/2000/01/rdf-schema#comment> "A person responsible for the safety and comfort of passengers during a flight." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FlightAttendant> <http://www.w3.org/2000/01/rdf-schema#label> "Flight Attendant"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FlightAttendant> <http://www.w3.org/2000/01/rdf-schema#label> "FlightAttendant"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FlightAttendant> <http://www.w3.org/2000/01/rdf-schema#label> "FlightAttendant"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FrequentFlyer
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FrequentFlyer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FrequentFlyer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FrequentFlyer> <http://www.w3.org/2000/01/rdf-schema#comment> "A passenger who travels frequently, often accumulating miles and benefits." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FrequentFlyer> <http://www.w3.org/2000/01/rdf-schema#label> "FrequentFlyer"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#FrequentFlyer> <http://www.w3.org/2000/01/rdf-schema#label> "FrequentFlyer"@iri-based .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#GroundService
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#GroundService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#GroundService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Service> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#GroundService> <http://www.w3.org/2000/01/rdf-schema#comment> "Services provided to passengers on the ground, before or after flights." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#GroundService> <http://www.w3.org/2000/01/rdf-schema#label> "Ground Service"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#GroundService> <http://www.w3.org/2000/01/rdf-schema#label> "GroundService"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#GroundService> <http://www.w3.org/2000/01/rdf-schema#label> "GroundService"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InFlightService
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InFlightService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InFlightService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Service> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InFlightService> <http://www.w3.org/2000/01/rdf-schema#comment> "Services provided to passengers during the flight." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InFlightService> <http://www.w3.org/2000/01/rdf-schema#label> "In-Flight Service"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InFlightService> <http://www.w3.org/2000/01/rdf-schema#label> "InFlightService"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InFlightService> <http://www.w3.org/2000/01/rdf-schema#label> "InFlightService"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InternationalFlight
 # 
@@ -251,28 +246,27 @@
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#JetAircraft> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#JetAircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "Aircraft powered by jet engines." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#JetAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Jet Aircraft"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#JetAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "JetAircraft"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#JetAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "JetAircraft"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#MealService
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#MealService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#MealService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#InFlightService> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#MealService> <http://www.w3.org/2000/01/rdf-schema#comment> "The service of providing food to passengers during a flight." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#MealService> <http://www.w3.org/2000/01/rdf-schema#label> "Meal Service"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#MealService> <http://www.w3.org/2000/01/rdf-schema#label> "MealService"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#MealService> <http://www.w3.org/2000/01/rdf-schema#label> "MealService"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NarrowBodyAircraft
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NarrowBodyAircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NarrowBodyAircraft> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NarrowBodyAircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "A smaller aircraft with a narrow fuselage, typically used for short to medium-haul flights." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NarrowBodyAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Narrow Body Aircraft"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NarrowBodyAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "NarrowBodyAircraft"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NarrowBodyAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "NarrowBodyAircraft"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NegativeReview
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NegativeReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NegativeReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NegativeReview> <http://www.w3.org/2000/01/rdf-schema#comment> "A negative assessment or feedback given by a passenger." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NegativeReview> <http://www.w3.org/2000/01/rdf-schema#label> "NegativeReview"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#NegativeReview> <http://www.w3.org/2000/01/rdf-schema#label> "NegativeReview"@iri-based .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -280,72 +274,64 @@
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who travels in an aircraft." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Passenger> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger"@iri-based .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Person
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an individual person, either a passenger or a member of the crew." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@iri-based .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Pilot
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Pilot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Pilot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Crew> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Pilot> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who operates the flying controls of an aircraft." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Pilot> <http://www.w3.org/2000/01/rdf-schema#label> "Pilot"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Pilot> <http://www.w3.org/2000/01/rdf-schema#label> "Pilot"@iri-based .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#PositiveReview
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#PositiveReview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#PositiveReview> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#PositiveReview> <http://www.w3.org/2000/01/rdf-schema#comment> "A positive assessment or feedback given by a passenger." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#PositiveReview> <http://www.w3.org/2000/01/rdf-schema#label> "PositiveReview"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#PositiveReview> <http://www.w3.org/2000/01/rdf-schema#label> "PositiveReview"@iri-based .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#QatarAirways
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#QatarAirways> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#QatarAirways> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#QatarAirways> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the airline company Qatar Airways." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#QatarAirways> <http://www.w3.org/2000/01/rdf-schema#label> "Qatar Airways"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#QatarAirways> <http://www.w3.org/2000/01/rdf-schema#label> "QatarAirways"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#QatarAirways> <http://www.w3.org/2000/01/rdf-schema#label> "QatarAirways"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a review or feedback provided by a passenger about a flight experience." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review> <http://www.w3.org/2000/01/rdf-schema#label> "Review"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Review> <http://www.w3.org/2000/01/rdf-schema#label> "Review"@iri-based .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ryanair
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ryanair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ryanair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Airline> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ryanair> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the airline company Ryanair." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ryanair> <http://www.w3.org/2000/01/rdf-schema#label> "Ryanair"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ryanair> <http://www.w3.org/2000/01/rdf-schema#label> "Ryanair"@iri-based .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Service
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Service> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents services provided to passengers, either in-flight or on the ground." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Service> <http://www.w3.org/2000/01/rdf-schema#label> "Service"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Service> <http://www.w3.org/2000/01/rdf-schema#label> "Service"@iri-based .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ticket
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ticket> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ticket> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a flight ticket purchased by a passenger." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ticket> <http://www.w3.org/2000/01/rdf-schema#label> "Ticket"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Ticket> <http://www.w3.org/2000/01/rdf-schema#label> "Ticket"@iri-based .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#TurboPropAircraft
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#TurboPropAircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#TurboPropAircraft> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#TurboPropAircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "Aircraft powered by turbine propeller engines." .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#TurboPropAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "TurboProp Aircraft"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#TurboPropAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "TurboPropAircraft"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#TurboPropAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "TurboPropAircraft"@en .
 # 
 # http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#WideBodyAircraft
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#WideBodyAircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#WideBodyAircraft> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#Aircraft> .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#WideBodyAircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "A large aircraft with a wide fuselage, typically used for long-haul flights" .
 <http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#WideBodyAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Wide Body Aircraft"@en .
-<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#WideBodyAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "WideBodyAircraft"@iri-based .
+<http://www.semanticweb.org/netrik/ontologies/2024/3/untitled-ontology-2#WideBodyAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "WideBodyAircraft"@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
