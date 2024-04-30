@@ -36,8 +36,8 @@
 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
 
 
-###  http://www.w3.org/2002/07/owl#Class
-owl:Class rdf:type owl:AnnotationProperty .
+###  http://www.w3.org/2002/07/owl#class
+owl:class rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -127,77 +127,87 @@ owl:Class rdf:type owl:AnnotationProperty .
           rdfs:comment "A vehicle used for air transport." ;
           rdfs:label "Aircraft" ;
           rdfs:seeAlso "http://dbpedia.org/page/Boeing_737" ;
-          owl:Class "Aircraft" .
+          owl:class "Aircraft" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#Airline
 :Airline rdf:type owl:Class ;
          rdfs:comment "Represents an airline company that operates flights." ;
          rdfs:label "Airline" ;
-         rdfs:seeAlso "http://dbpedia.org/page/Airline" .
+         rdfs:seeAlso "http://dbpedia.org/page/Airline" ;
+         owl:class "Airline" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#BaggageService
 :BaggageService rdf:type owl:Class ;
                 rdfs:subClassOf :GroundService ;
                 rdfs:comment "Services related to the handling of passenger luggage." ;
-                rdfs:label "Baggage Service" .
+                rdfs:label "Baggage Service" ;
+                owl:class "Baggage Service" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#BusinessClassTicket
 :BusinessClassTicket rdf:type owl:Class ;
                      rdfs:subClassOf :Ticket ;
                      rdfs:comment "A ticket for travel in the business class section of the aircraft." ;
-                     rdfs:label "Business Class Ticket" .
+                     rdfs:label "Business Class Ticket" ;
+                     owl:class "Business Class Ticket" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#CheckInService
 :CheckInService rdf:type owl:Class ;
                 rdfs:subClassOf :GroundService ;
                 rdfs:comment "The service of processing passengers and their baggage at the airport before a flight." ;
-                rdfs:label "Check-In Service" .
+                rdfs:label "Check-In Service" ;
+                owl:class "Check-In Service" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#Crew
 :Crew rdf:type owl:Class ;
       rdfs:subClassOf :Person ;
       rdfs:comment "The staff working on an aircraft during flights." ;
-      rdfs:label "Crew" .
+      rdfs:label "Crew" ;
+      owl:class "Crew" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#DomesticFlight
 :DomesticFlight rdf:type owl:Class ;
                 rdfs:subClassOf :Flight ;
                 rdfs:comment "A flight that occurs within the same country's borders." ;
-                rdfs:label "Domestic Flight" .
+                rdfs:label "Domestic Flight" ;
+                owl:class "Domestic Flight" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#EconomyClassTicket
 :EconomyClassTicket rdf:type owl:Class ;
                     rdfs:subClassOf :Ticket ;
                     rdfs:comment "A ticket for travel in the economy section of the aircraft." ;
-                    rdfs:label "Economy Class Ticket" .
+                    rdfs:label "Economy Class Ticket" ;
+                    owl:class "Economy Class Ticket" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#EntertainmentService
 :EntertainmentService rdf:type owl:Class ;
                       rdfs:subClassOf :InFlightService ;
                       rdfs:comment "Services related to entertainment provided to passengers during a flight." ;
-                      rdfs:label "Entertainment Service" .
+                      rdfs:label "Entertainment Service" ;
+                      owl:class "Entertainment Service" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#FirstClassTicket
 :FirstClassTicket rdf:type owl:Class ;
                   rdfs:subClassOf :Ticket ;
                   rdfs:comment "A ticket for travel in the luxurious first class section of the aircraft." ;
-                  rdfs:label "First Class Ticket" .
+                  rdfs:label "First Class Ticket" ;
+                  owl:class "First Class Ticket" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#FirstTimeFlyer
 :FirstTimeFlyer rdf:type owl:Class ;
                 rdfs:subClassOf :Passenger ;
                 rdfs:comment "A passenger who is flying for the first time." ;
-                rdfs:label "First Time Flyer" .
+                rdfs:label "First Time Flyer" ;
+                owl:class "First Time Flyer" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#Flight
@@ -208,104 +218,119 @@ owl:Class rdf:type owl:AnnotationProperty .
                               owl:onClass :Review
                             ] ;
         rdfs:comment "Represents a specific flight operation from one location to another." ;
-        rdfs:label "Flight" .
+        rdfs:label "Flight" ;
+        owl:class "Flight" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#FlightAttendant
 :FlightAttendant rdf:type owl:Class ;
                  rdfs:subClassOf :Crew ;
                  rdfs:comment "A person responsible for the safety and comfort of passengers during a flight." ;
-                 rdfs:label "Flight Attendant" .
+                 rdfs:label "Flight Attendant" ;
+                 owl:class "Flight Attendant" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#FrequentFlyer
 :FrequentFlyer rdf:type owl:Class ;
                rdfs:subClassOf :Passenger ;
                rdfs:comment "A passenger who travels frequently, often accumulating miles and benefits." ;
-               rdfs:label "FrequentFlyer" .
+               rdfs:label "FrequentFlyer" ;
+               owl:class "FrequentFlyer" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#GroundService
 :GroundService rdf:type owl:Class ;
                rdfs:subClassOf :Service ;
                rdfs:comment "Services provided to passengers on the ground, before or after flights." ;
-               rdfs:label "Ground Service" .
+               rdfs:label "Ground Service" ;
+               owl:class "Ground Service" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#InFlightService
 :InFlightService rdf:type owl:Class ;
                  rdfs:subClassOf :Service ;
                  rdfs:comment "Services provided to passengers during the flight." ;
-                 rdfs:label "In-Flight Service" .
+                 rdfs:label "In-Flight Service" ;
+                 owl:class "In-Flight Service" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#InternationalFlight
 :InternationalFlight rdf:type owl:Class ;
                      rdfs:subClassOf :Flight ;
                      rdfs:comment "A flight that travels from one country to another." ;
-                     rdfs:label "International Flight" .
+                     rdfs:label "International Flight" ;
+                     owl:class "International Flight" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#JetAircraft
 :JetAircraft rdf:type owl:Class ;
              rdfs:subClassOf :Aircraft ;
              rdfs:comment "Aircraft powered by jet engines." ;
-             rdfs:label "Jet Aircraft" .
+             rdfs:label "Jet Aircraft" ;
+             owl:class "Jet Aircraft" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#MealService
 :MealService rdf:type owl:Class ;
              rdfs:subClassOf :InFlightService ;
              rdfs:comment "The service of providing food to passengers during a flight." ;
-             rdfs:label "Meal Service" .
+             rdfs:label "Meal Service" ;
+             owl:class "Meat Service" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#NarrowBodyAircraft
 :NarrowBodyAircraft rdf:type owl:Class ;
                     rdfs:subClassOf :Aircraft ;
                     rdfs:comment "A smaller aircraft with a narrow fuselage, typically used for short to medium-haul flights." ;
-                    rdfs:label "Narrow Body Aircraft" .
+                    rdfs:label "Narrow Body Aircraft" ;
+                    owl:class "Narrow Body Aircraft" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#NegativeReview
 :NegativeReview rdf:type owl:Class ;
                 rdfs:subClassOf :Review ;
                 rdfs:comment "A negative assessment or feedback given by a passenger." ;
-                rdfs:label "NegativeReview" .
+                rdfs:label "NegativeReview" ;
+                owl:class "NegativeReview" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#Passenger
 :Passenger rdf:type owl:Class ;
            rdfs:subClassOf :Person ;
            rdfs:comment "A person who travels in an aircraft." ;
-           rdfs:label "Passenger" .
+           rdfs:label "Passenger" ;
+           owl:class "Passenger" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#Person
 :Person rdf:type owl:Class ;
         rdfs:comment "Represents an individual person, either a passenger or a member of the crew." ;
-        rdfs:label "Person" .
+        rdfs:label "Person" ;
+        owl:class "Person" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#Pilot
 :Pilot rdf:type owl:Class ;
        rdfs:subClassOf :Crew ;
        rdfs:comment "A person who operates the flying controls of an aircraft." ;
-       rdfs:label "Pilot" .
+       rdfs:label "Pilot" ;
+       owl:class "Pilot" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#PositiveReview
 :PositiveReview rdf:type owl:Class ;
                 rdfs:subClassOf :Review ;
                 rdfs:comment "A positive assessment or feedback given by a passenger." ;
-                rdfs:label "PositiveReview" .
+                rdfs:label "PositiveReview" ;
+                owl:class "PositiveReview" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#QatarAirways
 :QatarAirways rdf:type owl:Class ;
               rdfs:subClassOf :Airline ;
               rdfs:comment "Represents the airline company Qatar Airways." ;
-              rdfs:label "Qatar Airways" .
+              rdfs:label "Qatar Airways" ;
+              owl:class "Watar Airways" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#Review
@@ -316,41 +341,47 @@ owl:Class rdf:type owl:AnnotationProperty .
                               owl:onDataRange xsd:decimal
                             ] ;
         rdfs:comment "Represents a review or feedback provided by a passenger about a flight experience." ;
-        rdfs:label "Review" .
+        rdfs:label "Review" ;
+        owl:class "Review" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#Ryanair
 :Ryanair rdf:type owl:Class ;
          rdfs:subClassOf :Airline ;
          rdfs:comment "Represents the airline company Ryanair." ;
-         rdfs:label "Ryanair" .
+         rdfs:label "Ryanair" ;
+         owl:class "Ryanair" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#Service
 :Service rdf:type owl:Class ;
          rdfs:comment "Represents services provided to passengers, either in-flight or on the ground." ;
-         rdfs:label "Service" .
+         rdfs:label "Service" ;
+         owl:class "Service" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#Ticket
 :Ticket rdf:type owl:Class ;
         rdfs:comment "Represents a flight ticket purchased by a passenger." ;
         rdfs:label "Ticket" ;
-        rdfs:seeAlso "http://dbpedia.org/page/Airline_ticket" .
+        rdfs:seeAlso "http://dbpedia.org/page/Airline_ticket" ;
+        owl:class "Ticket" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#TurboPropAircraft
 :TurboPropAircraft rdf:type owl:Class ;
                    rdfs:subClassOf :Aircraft ;
                    rdfs:comment "Aircraft powered by turbine propeller engines." ;
-                   rdfs:label "TurboProp Aircraft" .
+                   rdfs:label "TurboProp Aircraft" ;
+                   owl:class "TurboPropAircraft" .
 
 
 ###  http://www.semanticweb.org/gian/ontologies/2024/3/ontology#WideBodyAircraft
 :WideBodyAircraft rdf:type owl:Class ;
                   rdfs:subClassOf :Aircraft ;
                   rdfs:comment "A large aircraft with a wide fuselage, typically used for long-haul flights" ;
-                  rdfs:label "Wide Body Aircraft" .
+                  rdfs:label "Wide Body Aircraft" ;
+                  owl:class "Wide Body Aircraft" .
 
 
 #################################################################
